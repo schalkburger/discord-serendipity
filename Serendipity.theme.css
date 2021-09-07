@@ -50,11 +50,12 @@ nav.container-3w7J-x,
 }
 
 .iconVisibility-sTNpHs.wrapper-2jXpOf.modeConnected-3IsKId {
-  border-top: 1px solid var(--color-cyclamen);
-  /* background: #1a2235; */
+  /* border-top: 1px solid var(--color-cyclamen); */
+  border-bottom: 1px solid var(--color-cyclamen);
   background: var(--color-raisinblack2);
-  margin-top: 10px;
-  padding-top: 7px;
+  background: transparent;
+  margin-top: 5px;
+  padding-top: 6px;
 }
 
 .iconVisibility-sTNpHs.wrapper-2jXpOf.modeConnected-3IsKId .icon-1DeIlz {
@@ -65,10 +66,10 @@ nav.container-3w7J-x,
   padding-left: 12px;
   padding-top: 4px;
   background: #1a202e;
-  background: radial-gradient(circle, #1b2331 10%, rgb(35, 40, 53) 80%);
-  box-shadow: 0px -5px 5px 2px #1d222d inset;
+  background: radial-gradient(circle, #242e40 10%, rgb(35, 40, 53) 80%);
+  box-shadow: 0px 4px 3px 0px #1d222d;
   /* border-bottom: 1px solid var(--color-manatee); */
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .usernameFont-23TX-h {
@@ -76,6 +77,11 @@ nav.container-3w7J-x,
 }
 
 /* Category */
+
+.containerDefault-3tr_sE {
+  margin-top: 5px;
+  padding-top: 5px;
+}
 
 .iconVisibility-fhcwiH.wrapper-PY0fhH.clickable-536fPF {
   background: var(--color-raisinblack2);
@@ -85,7 +91,8 @@ nav.container-3w7J-x,
 
 .container-2ax-kl {
   color: var(--color-manatee);
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
+  height: 55px;
 }
 
 .mainContent-u_9PKf {
@@ -166,4 +173,23 @@ nav.container-3w7J-x,
   width: 18px;
   height: 18px;
   margin: 0 2px;
+}
+
+/*
+* === Members List  ===
+*/
+
+.layout-2DM8Md {
+  height: 25px;
+  padding: 3px 6px;
+}
+
+.avatar-3uk_u9,
+.avatar-3uk_u9 > * {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.nameAndDecorators-5FJ2dg .name-uJV0GL {
+  font-size: 14px;
 }
