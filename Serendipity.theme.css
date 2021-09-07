@@ -193,3 +193,36 @@ nav.container-3w7J-x,
 .nameAndDecorators-5FJ2dg .name-uJV0GL {
   font-size: 14px;
 }
+
+/*
+* === Direct Messages  ===
+*/
+
+.scroller-1JbKMe {
+  background: var(--color-raisinblack);
+}
+
+/*
+* === Top Bar  ===
+*/
+
+.childWrapper-anI2G9,
+.bd-minimal .guilds-1SWlCJ #bd-pub-button,
+#app-mount .guilds-1SWlCJ .frame-oXWS21[class*="listItem"] .button-Jt-tIg {
+  background: transparent;
+  line-height: 2;
+  padding: 0;
+  height: 40px;
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.childWrapper-anI2G9,
+.wrapper-1BJsBx img {
+  width: 24px;
+  height: 24px;
+}
+
+#app-mount .guilds-1SWlCJ [class*="listItem"]:not([class*="listItemWrapper"]) {
+  margin: 6px 2px;
+}
