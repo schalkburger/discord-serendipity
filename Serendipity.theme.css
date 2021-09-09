@@ -1,3 +1,11 @@
+/**
+ * @name Serendipity
+ * @author Darkharden
+ * @version 1.0.0
+ * @description Serendipity, lovely for retina displays.
+ * @source https://github.com/DiscordStyles/DarkMatter/
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,500&display=swap");
 
 /*
@@ -156,6 +164,18 @@ nav.container-3w7J-x,
   background: var(--color-raisinblack);
 }
 
+/* Chat Input Disabled */
+
+.channelTextArea-rNsIhG {
+  background-color: var(--color-raisinblack2);
+}
+
+/* Embeds */
+
+.embedFull-2tM8-- {
+  background: var(--color-raisinblack);
+}
+
 /*
 * === User Area  ===
 */
@@ -271,3 +291,5 @@ nav.container-3w7J-x,
 .circleIconButton-1QV--U {
   background-color: transparent !important;
 }
+
+/*  */
