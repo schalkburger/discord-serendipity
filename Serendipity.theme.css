@@ -42,38 +42,53 @@ nav.container-3w7J-x,
   color: var(--color-manatee);
 }
 
+/* Server Name */
+
+.bd-minimal .container-1r6BKw,
+.bd-minimal .header-2V-4Sw,
+.bd-minimal .searchBar-6Kv8R2 {
+  background-color: transparent;
+}
+
 .name-1jkAdW {
   font-size: 12px;
-  color: var(--color-bluegreen);
+  color: var(--color-manatee);
   font-weight: 600;
   text-transform: uppercase;
 }
 
+/* Active Channel */
+
 .iconVisibility-sTNpHs.wrapper-2jXpOf.modeConnected-3IsKId {
-  /* border-top: 1px solid var(--color-cyclamen); */
   border-bottom: 1px solid var(--color-cyclamen);
-  background: var(--color-raisinblack2);
-  background: transparent;
+  background: var(--color-raisinblack);
+  /* background: transparent; */
   margin-top: 5px;
   padding-top: 6px;
 }
 
 .iconVisibility-sTNpHs.wrapper-2jXpOf.modeConnected-3IsKId .icon-1DeIlz {
-  color: var(--color-cyclamen);
+  color: var(--color-celeste);
 }
 
 .listDefault-3ir5aS {
   padding-left: 12px;
   padding-top: 4px;
   background: #1a202e;
-  background: radial-gradient(circle, #242e40 10%, rgb(35, 40, 53) 80%);
+  background: radial-gradient(circle, #1f293c 10%, rgb(35, 40, 53) 90%);
   box-shadow: 0px 4px 3px 0px #1d222d;
-  /* border-bottom: 1px solid var(--color-manatee); */
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 
 .usernameFont-23TX-h {
   font-size: 12px;
+}
+
+/* Text Channel */
+
+.channelName-2YrOjO,
+.subtitle-3V1p2E {
+  text-transform: capitalize;
 }
 
 /* Category */
@@ -180,8 +195,8 @@ nav.container-3w7J-x,
 */
 
 .layout-2DM8Md {
-  height: 25px;
-  padding: 3px 6px;
+  height: 28px;
+  padding: 4px 6px;
 }
 
 .avatar-3uk_u9,
@@ -198,13 +213,26 @@ nav.container-3w7J-x,
 * === Direct Messages  ===
 */
 
-.scroller-1JbKMe {
+.scroller-1JbKMe,
+.theme-dark .container-1D34oG,
+.actionButton-uPB8Fs,
+.scroller-2ZPeAD,
+.wrapper-3D2qGf,
+.searchBar-6Kv8R2 .searchBarComponent-32dTOx,
+.bd-minimal .searchBar-6Kv8R2 {
   background: var(--color-raisinblack);
 }
 
 /*
 * === Top Bar  ===
 */
+
+/* Discord Icon */
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+  background: transparent;
+}
 
 .childWrapper-anI2G9,
 .bd-minimal .guilds-1SWlCJ #bd-pub-button,
@@ -218,11 +246,28 @@ nav.container-3w7J-x,
 }
 
 .childWrapper-anI2G9,
-.wrapper-1BJsBx img {
-  width: 24px;
-  height: 24px;
+.wrapper-1BJsBx img,
+#app-mount .guilds-1SWlCJ .svg-1X37T1,
+#app-mount .guilds-1SWlCJ .wrapper-25eVIn,
+#app-mount .guilds-1SWlCJ .guildsError-b7zR5H,
+#app-mount .guilds-1SWlCJ .placeholderMask-3K9THS {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 32px;
 }
 
 #app-mount .guilds-1SWlCJ [class*="listItem"]:not([class*="listItemWrapper"]) {
-  margin: 6px 2px;
+  margin: 8px 4px;
+}
+
+.upperLeftBadge-e35IpL .iconBadge-3qSJIw {
+  background-color: transparent;
+}
+
+/* Folders */
+
+.folderIconWrapper-1_bOZe,
+.folder-1hbNCn,
+.circleIconButton-1QV--U {
+  background-color: transparent !important;
 }
