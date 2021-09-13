@@ -2,8 +2,8 @@
  * @name Serendipity
  * @author Darkharden
  * @version 1.0.0
- * @description Serendipity, lovely for retina displays.
- * @source https://github.com/DiscordStyles/DarkMatter/
+ * @description Discord theme based on Serendipity for VS Code
+ * @source https://github.com/schalkburger/discord-serendipity
 */
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,500&display=swap");
@@ -292,4 +292,8 @@ nav.container-3w7J-x,
   background-color: transparent !important;
 }
 
-/*  */
+/* Expanded Folder */
+
+.expandedFolderBackground-1cujaW {
+  background-color: var(--color-raisinblack);
+}
