@@ -8,9 +8,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,500&display=swap");
 
-/*
-* === Variables ===
-*/
+/********************************
+* ===  Variables ===
+*******************************/
 
 :root {
   --color-raisinblack: #222834;
@@ -56,9 +56,9 @@ body {
   background-color: var(--color-raisinblack) !important;
 }
 
-/*
-* === Left Sidebar ===
-*/
+/********************************
+* ===  Left Sidebar ===
+*******************************/
 
 nav.container-3w7J-x,
 .threadSidebar-1o3BTy,
@@ -143,7 +143,7 @@ nav.container-3w7J-x,
 }
 
 .iconVisibility-fhcwiH.wrapper-PY0fhH.clickable-536fPF {
-  background: var(--color-raisinblack2);
+  background: #333b4e;
   padding: 6px 2px;
   height: 36px;
 }
@@ -190,9 +190,9 @@ nav.container-3w7J-x,
   color: var(--color-celeste);
 }
 
-/*
-* === Main Chat ===
-*/
+/********************************
+* ===  Main Chat ===
+*******************************/
 
 .chat-3bRxxu {
   background-color: var(--color-raisinblack2);
@@ -216,9 +216,9 @@ nav.container-3w7J-x,
   background: var(--color-raisinblack);
 }
 
-/*
-* === User Area  ===
-*/
+/********************************
+* ===  User Area  ===
+*******************************/
 
 .panels-j1Uci_ {
   background: var(--color-raisinblack);
@@ -250,9 +250,14 @@ nav.container-3w7J-x,
   margin: 0 2px;
 }
 
-/*
-* === Members List  ===
-*/
+.button-1YfofB.buttonColor-7qQbGO,
+.button-1YfofB .buttonColor-7qQbGO {
+  background: transparent;
+}
+
+/********************************
+* ===  Members List  ===
+*******************************/
 
 .bd-minimal .membersWrap-2h-GB4 {
   width: 200px;
@@ -270,7 +275,7 @@ nav.container-3w7J-x,
 }
 
 .nameAndDecorators-5FJ2dg .name-uJV0GL {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .members-1998pB.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 .container-2ax-kl {
@@ -279,9 +284,9 @@ nav.container-3w7J-x,
   height: 35px;
 }
 
-/*
-* === Direct Messages  ===
-*/
+/********************************
+* ===  Direct Messages  ===
+*******************************/
 
 .scroller-1JbKMe,
 .theme-dark .container-1D34oG,
@@ -293,9 +298,13 @@ nav.container-3w7J-x,
   background: var(--color-raisinblack);
 }
 
-/*
-* === Top Bar  ===
-*/
+/********************************
+* ===  Top Bar  ===
+*******************************/
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih {
+  overflow: visible !important;
+}
 
 /* Top Bar Background */
 
@@ -346,7 +355,7 @@ nav.container-3w7J-x,
 }
 
 #app-mount .guilds-1SWlCJ [class*="listItem"]:not([class*="listItemWrapper"]) {
-  margin: 8px 3px;
+  margin: 12px 12px;
 }
 
 .upperLeftBadge-e35IpL .iconBadge-3qSJIw {
@@ -365,4 +374,10 @@ nav.container-3w7J-x,
 
 .expandedFolderBackground-1cujaW {
   background-color: var(--color-raisinblack);
+}
+
+/* Server Unread */
+
+.item-2hkk8m {
+  background-color: var(--color-manatee);
 }
