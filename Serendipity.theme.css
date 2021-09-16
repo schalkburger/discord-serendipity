@@ -32,6 +32,30 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 24px !important;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  border: 3px solid transparent !important;
+  border-radius: 7px !important;
+  background-clip: padding-box !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-raisinblack2) !important;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-manatee) !important;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background-color: var(--color-raisinblack) !important;
+}
+
 /*
 * === Left Sidebar ===
 */
@@ -316,13 +340,13 @@ nav.container-3w7J-x,
 #app-mount .guilds-1SWlCJ .wrapper-25eVIn,
 #app-mount .guilds-1SWlCJ .guildsError-b7zR5H,
 #app-mount .guilds-1SWlCJ .placeholderMask-3K9THS {
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 40px;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 35px;
 }
 
 #app-mount .guilds-1SWlCJ [class*="listItem"]:not([class*="listItemWrapper"]) {
-  margin: 8px 4px;
+  margin: 8px 3px;
 }
 
 .upperLeftBadge-e35IpL .iconBadge-3qSJIw {
