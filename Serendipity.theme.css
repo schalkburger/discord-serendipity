@@ -14,6 +14,7 @@
 
 :root {
   --color-raisinblack: #232834;
+  --color-ebonyclay: #1f2430;
   --color-timberwolf: #8d917c;
   --color-lightsalmon: #f29e74;
   --color-cyclamen: #f06897;
@@ -66,7 +67,7 @@ body {
 
 .scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih {
   overflow: visible !important;
-  background: #1f2430;
+  background: var(--color-ebonyclay);
 }
 
 /* Top Bar Divider */
@@ -87,6 +88,8 @@ body {
 .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
   background: transparent;
 }
+
+/* Server Icons */
 
 .bd-minimal .container-1r6BKw,
 .childWrapper-anI2G9,
@@ -109,10 +112,11 @@ body {
   width: 35px !important;
   height: 35px !important;
   border-radius: 35px;
+  background-color: var(--color-charcoal);
 }
 
 #app-mount .guilds-1SWlCJ [class*="listItem"]:not([class*="listItemWrapper"]) {
-  margin: 12px 12px;
+  margin: 12px 10px;
 }
 
 .upperLeftBadge-e35IpL .iconBadge-3qSJIw {
@@ -133,10 +137,23 @@ body {
   background-color: var(--color-raisinblack);
 }
 
-/* Server Unread */
+/* Server Unread Pill */
 
-.item-2hkk8m {
-  background-color: var(--color-manatee);
+#app-mount .guilds-1SWlCJ [class*="pill"] span[style*="height: 40"] {
+  background-color: var(--color-raisinblack);
+  border-radius: 0;
+}
+
+#app-mount .guilds-1SWlCJ [class*="pill"] span[style*="height: 8"] {
+  background-color: var(--color-raisinblack);
+}
+
+/* Active Server */
+
+.listItem-GuPuDH.bd-guild.bd-selected {
+  background: var(--color-charcoal);
+  border-top: 2px solid var(--color-cyclamen);
+  border-radius: 35px;
 }
 
 /****************************************************************
