@@ -8,6 +8,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,500&display=swap");
 
+/* IMPORT CSS */
+/* @import url(https://clearvision.gitlab.io/v6/main.css);
+ */
+
 /****************************************************************
 * ===  Variables ===
 **************************************************************/
@@ -26,6 +30,11 @@
   --color-manatee: #8c94a3;
   --color-white: #ffffff;
   --color-charcoal: #333b4e;
+}
+
+.theme-dark {
+  --brightness: 1;
+  --contrast: 1;
 }
 
 body {
@@ -73,7 +82,7 @@ body {
 
 .scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih {
   overflow: visible !important;
-  background: var(--color-ebonyclay);
+  background: #1f2430;
 }
 
 /* Top Bar Divider */
@@ -162,7 +171,9 @@ body {
 
 /* Active Server */
 
-.listItem-GuPuDH.bd-guild.bd.bd-unread {
+.listItem-GuPuDH.bd-guild,
+.listItem-GuPuDH.bd-guild.bd-unread,
+.tutorialContainer-2sGCg9 {
   background: #1f2430;
   border-top: 2px solid transparent;
   border-radius: 0;
@@ -387,6 +398,12 @@ nav.container-3w7J-x,
   background: transparent;
 }
 
+/* Mentioned */
+
+.mentioned-xhSam7 {
+  background-color: var(--color-raisinblack);
+}
+
 /****************************************************************
 * ===  Members List  ===
 **************************************************************/
@@ -433,4 +450,13 @@ nav.container-3w7J-x,
 
 .privateChannels-1nO12o .nameAndDecorators-5FJ2dg .name-uJV0GL {
   font-size: 14px;
+}
+
+/****************************************************************
+* ===  Preferences  ===
+**************************************************************/
+
+.sidebarRegionScroller-3MXcoP,
+.contentRegionScroller-26nc1e {
+  background: var(--color-raisinblack);
 }
