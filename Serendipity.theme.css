@@ -54,14 +54,15 @@ body {
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track-piece {
-  border: 3px solid transparent !important;
-  border-radius: 7px !important;
+  border: 3px solid var(--color-ebonyclay) !important;
+  border-radius: 2px !important;
   background-clip: padding-box !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-raisinblack) !important;
+  background-color: var(--color-manatee) !important;
 }
+
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--color-manatee) !important;
 }
