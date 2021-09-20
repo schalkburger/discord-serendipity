@@ -6,14 +6,22 @@
  * @source https://github.com/schalkburger/discord-serendipity
 */
 
+/****************************************************************
+
+* ===  1. Global ===
+* ===  2. Top Bar  ===
+* ===  3. Left Sidebar ===
+* ===  4. User Area  ===
+* ===  5. Main Chat ===
+* ===  6. Members List  ===
+* ===  7. Direct Messages  ===
+
+**************************************************************/
+
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,500&display=swap");
 
-/* IMPORT CSS */
-/* @import url(https://clearvision.gitlab.io/v6/main.css);
- */
-
 /****************************************************************
-* ===  Variables ===
+* ===  1. Global ===
 **************************************************************/
 
 :root {
@@ -30,11 +38,6 @@
   --color-manatee: #8c94a3;
   --color-white: #ffffff;
   --color-charcoal: #333b4e;
-}
-
-.theme-dark {
-  --brightness: 1;
-  --contrast: 1;
 }
 
 body {
@@ -69,25 +72,32 @@ body {
 }
 
 /****************************************************************
-* ===  Top Bar  ===
+* ===  2. Top Bar  ===
 **************************************************************/
 
 /* Title Bar */
 
 .titleBar-AC4pGV {
-  background: #232834;
+  background: var(--color-ebonyclay);
 }
 
 /* Top Bar Background */
 
 .scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih {
   overflow: visible !important;
-  background: #1f2430;
+  background: var(--color-raisinblack);
 }
 
 /* Top Bar Divider */
 
 .theme-dark .children-19S4PO:after {
+  background: transparent;
+}
+
+/* Discord Icon */
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9 {
   background: transparent;
 }
 
@@ -107,18 +117,18 @@ body {
 
 .childWrapper-anI2G9,
 .wrapper-1BJsBx img,
+#app-mount .guilds-1SWlCJ .svg-1X37T1,
+#app-mount .guilds-1SWlCJ .wrapper-25eVIn,
 #app-mount .guilds-1SWlCJ .guildsError-b7zR5H,
 #app-mount .guilds-1SWlCJ .placeholderMask-3K9THS {
   width: 35px !important;
   height: 35px !important;
-  border-radius: 0;
+  border-radius: 30px;
   background-color: var(--color-raisinblack);
 }
 
 #app-mount .guilds-1SWlCJ [class*="listItem"]:not([class*="listItemWrapper"]) {
-  margin: 0;
-  height: auto;
-  padding: 10px 10px 5px 10px;
+  margin: 12px 0px;
 }
 
 .upperLeftBadge-e35IpL .iconBadge-3qSJIw {
@@ -156,26 +166,11 @@ body {
   background-color: var(--color-raisinblack);
 }
 
-/* Discord Icon */
-
-.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
-.wrapper-1BJsBx:hover .childWrapper-anI2G9,
-#app-mount .guilds-1SWlCJ .svg-1X37T1,
-#app-mount .guilds-1SWlCJ .wrapper-25eVIn {
-  background: transparent;
-}
-
-.listItem-GuPuDH .guildSeparator-33mFX6 {
-  height: 0;
-}
-
 /* Active Server */
 
-.listItem-GuPuDH.bd-guild,
-.listItem-GuPuDH.bd-guild.bd-unread,
-.tutorialContainer-2sGCg9 {
+.listItem-GuPuDH.bd-guild.bd-unread {
   background: #1f2430;
-  border-top: 2px solid transparent;
+  border-top: 2px solid #8c94a3;
   border-radius: 0;
 }
 
@@ -186,7 +181,7 @@ body {
 }
 
 /****************************************************************
-* ===  Left Sidebar ===
+* ===  3. Left Sidebar ===
 **************************************************************/
 
 nav.container-3w7J-x,
@@ -247,15 +242,9 @@ nav.container-3w7J-x,
 }
 
 .container-2ax-kl {
-  color: #cbccc6;
+  color: #bebebe;
   padding: 15px 15px 0 20px;
   height: 45px;
-}
-
-/* Active Channel Icon */
-
-.iconVisibility-sTNpHs.wrapper-2jXpOf.modeConnected-3IsKId .icon-1DeIlz {
-  color: var(--color-celeste);
 }
 
 /* Active Channel Name */
@@ -292,17 +281,15 @@ nav.container-3w7J-x,
   padding: 3px 0;
 }
 
-/* Selected Channel */
+/* Channels */
 
 .modeConnected-3IsKId .name-23GUGE,
 .modeConnected-3IsKId:hover .name-23GUGE,
-.modeSelected-346R90 .name-23GUGE,
-.modeSelected-346R90:hover .name-23GUGE,
 .modeUnread-1qO3K1 .name-23GUGE,
 .modeUnread-1qO3K1:hover .name-23GUGE,
 .notInteractive-1X92pj.modeConnected-3IsKId .name-23GUGE,
 .notInteractive-1X92pj.modeSelected-346R90 .name-23GUGE {
-  color: var(--color-lightskyblue);
+  color: var(--color-white);
 }
 
 .modeSelected-346R90 .content-1x5b-n,
@@ -312,7 +299,6 @@ nav.container-3w7J-x,
 
 /* Icons */
 
-.modeSelected-346R90 .icon-1DeIlz,
 .modeSelected-346R90:hover .icon-1DeIlz,
 .modeUnread-1qO3K1 .icon-1DeIlz,
 .modeUnread-1qO3K1:hover .icon-1DeIlz,
@@ -320,12 +306,33 @@ nav.container-3w7J-x,
   color: #3f6779;
 }
 
-.modeSelected-346R90 .icon-1DeIlz {
+/* Selected Connected Channel */
+
+.iconVisibility-sTNpHs.wrapper-2jXpOf.modeSelected-346R90 {
+  background: linear-gradient(45deg, #263554, #232835);
+}
+
+.modeSelected-346R90 .icon-1DeIlz,
+.modeSelected-346R90 .name-23GUGE,
+.modeConnected-3IsKId .name-23GUGE,
+.modeSelected-346R90:hover .name-23GUGE {
   color: var(--color-celeste);
 }
 
+/* Active Channel Icon */
+
+.iconVisibility-sTNpHs.wrapper-2jXpOf.modeConnected-3IsKId .icon-1DeIlz {
+  color: var(--color-celeste);
+}
+
+/* New Unreads */
+
+.unread-1xRYoj {
+  background-color: var(--color-charcoal);
+}
+
 /****************************************************************
-* ===  User Area  ===
+* ===  4. User Area  ===
 **************************************************************/
 
 .panels-j1Uci_ {
@@ -364,10 +371,22 @@ nav.container-3w7J-x,
 .button-1YfofB.buttonColor-7qQbGO,
 .button-1YfofB .buttonColor-7qQbGO {
   background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* Activity Panel */
+
+.activityPanel-28dQGo {
+  display: none;
+}
+
+.panels-j1Uci_:hover .activityPanel-28dQGo {
+  display: block;
 }
 
 /****************************************************************
-* ===  Main Chat ===
+* ===  5. Main Chat ===
 **************************************************************/
 
 .chat-3bRxxu {
@@ -398,14 +417,8 @@ nav.container-3w7J-x,
   background: transparent;
 }
 
-/* Mentioned */
-
-.mentioned-xhSam7 {
-  background-color: var(--color-raisinblack);
-}
-
 /****************************************************************
-* ===  Members List  ===
+* ===  6. Members List  ===
 **************************************************************/
 
 .bd-minimal .membersWrap-2h-GB4 {
@@ -435,7 +448,7 @@ nav.container-3w7J-x,
 }
 
 /****************************************************************
-* ===  Direct Messages  ===
+* ===  7. Direct Messages  ===
 **************************************************************/
 
 .scroller-1JbKMe,
@@ -450,13 +463,4 @@ nav.container-3w7J-x,
 
 .privateChannels-1nO12o .nameAndDecorators-5FJ2dg .name-uJV0GL {
   font-size: 14px;
-}
-
-/****************************************************************
-* ===  Preferences  ===
-**************************************************************/
-
-.sidebarRegionScroller-3MXcoP,
-.contentRegionScroller-26nc1e {
-  background: var(--color-raisinblack);
 }
