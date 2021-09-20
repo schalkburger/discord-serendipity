@@ -15,6 +15,7 @@
 * ===  5. Main Chat ===
 * ===  6. Members List  ===
 * ===  7. Direct Messages  ===
+* ===  8. Settings  ===
 
 **************************************************************/
 
@@ -479,4 +480,13 @@ h2.membersGroup-v9BXpm.container-2ax-kl {
 
 .privateChannels-1nO12o .nameAndDecorators-5FJ2dg .name-uJV0GL {
   font-size: 14px;
+}
+
+/****************************************************************
+* ===  8. Settings  ===
+**************************************************************/
+
+.sidebarRegionScroller-3MXcoP,
+.contentRegionScroller-26nc1e {
+  background: var(--color-charcoal);
 }
