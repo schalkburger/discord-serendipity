@@ -61,11 +61,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-manatee) !important;
+  background-color: var(--color-charcoal) !important;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--color-manatee) !important;
+  background-color: var(--color-charcoal) !important;
 }
 
 ::-webkit-scrollbar-track,
