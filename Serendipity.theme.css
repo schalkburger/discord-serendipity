@@ -126,11 +126,11 @@ body {
   width: 35px !important;
   height: 35px !important;
   border-radius: 30px;
-  background-color: var(--color-raisinblack);
+  background-color: transparent;
 }
 
 #app-mount .guilds-1SWlCJ [class*="listItem"]:not([class*="listItemWrapper"]) {
-  margin: 12px 0px;
+  margin: 12px 10px;
 }
 
 .upperLeftBadge-e35IpL .iconBadge-3qSJIw {
@@ -155,6 +155,8 @@ body {
 
 .expandedFolderBackground-1cujaW {
   background-color: var(--color-raisinblack);
+  box-shadow: 1px 1px 0px 0px rgb(0 0 0 / 40%) inset;
+  border-radius: 0 !important;
 }
 
 /* Server Unread Pill */
