@@ -83,6 +83,11 @@ body {
   background: var(--color-ebonyclay);
 }
 
+html.platform-osx #app-mount .typeMacOS-3EmCyP {
+  background: transparent;
+  position: relative;
+}
+
 /* Top Bar Background */
 
 .scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih {
