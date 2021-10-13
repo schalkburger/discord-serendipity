@@ -612,9 +612,23 @@ h2.membersGroup-v9BXpm.container-2ax-kl {
 .connectionHeader-2MDqhu,
 .integration-3kMeY4,
 .cardPrimary-1Hv-to,
-.cardPrimaryEditable-3KtE4g {
+.cardPrimaryEditable-3KtE4g,
+.settingCard-3w2mVL.active-1ytUzX,
+.cardFolder-28dwxo,
+.scroller-305q3I {
   background: var(--color-raisinblack);
   border-color: var(--color-charcoal);
+}
+
+/* Channel Permissions */
+
+.scroller-305q3I {
+  background: var(--color-ebonyclay);
+  border-color: var(--color-charcoal);
+}
+
+.scroller-305q3I::-webkit-scrollbar {
+  width: 0px !important;
 }
 
 /* Search Roles */
