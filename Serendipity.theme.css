@@ -640,3 +640,22 @@ h2.membersGroup-v9BXpm.container-2ax-kl {
 .itemFilled-3llgIC[aria-checked="true"] {
   background: var(--color-charcoal);
 }
+
+/* Recent Mentions & Unreads */
+
+.recentMentionsPopout-3rCiI6.messagesPopoutWrap-1MQ1bW {
+  background: var(--color-raisinblack);
+}
+
+.recentMentionsPopout-3rCiI6.messagesPopoutWrap-1MQ1bW .header-ykumBX {
+  background: var(--color-ebonyclay);
+}
+
+.recentMentionsPopout-3rCiI6.messagesPopoutWrap-1MQ1bW .channelHeader-3Gd2xq {
+  background: var(--color-darkgunmental);
+}
+
+.recentMentionsPopout-3rCiI6.messagesPopoutWrap-1MQ1bW
+  .messageContainer-gbhlwo {
+  background: var(--color-ebonyclay);
+}
