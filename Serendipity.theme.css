@@ -198,6 +198,11 @@ body {
   background: var(--color-darkgunmental) !important;
 }
 
+.bd-minimal .guilds-1SWlCJ .wrapper-3Njo_c > span {
+  left: 12px;
+  width: 45px;
+}
+
 /* Expanded Folder */
 
 .expandedFolderBackground-1cujaW {
@@ -226,14 +231,18 @@ body {
   border-radius: 0;
 }
 
-.draggable-2E_4tJ {
+/* .draggable-2E_4tJ {
   position: relative;
   height: 30px;
-}
+} */
 
 /* Guild Separator */
 
 .guildSeparator-33mFX6 {
+  display: none;
+}
+
+#bd-pub-li {
   display: none;
 }
 
@@ -534,6 +543,12 @@ nav.container-3w7J-x,
 
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
   background: transparent;
+}
+
+.buttonContainer-DHceWr .wrapper-2aW0bm {
+  background-color: var(--color-darkgunmental);
+  padding: 6px 8px;
+  height: 45px;
 }
 
 /****************************************************************
