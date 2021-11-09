@@ -198,11 +198,6 @@ body {
   background: var(--color-darkgunmental) !important;
 }
 
-.bd-minimal .guilds-1SWlCJ .wrapper-3Njo_c > span {
-  left: 12px;
-  width: 45px;
-}
-
 /* Expanded Folder */
 
 .expandedFolderBackground-1cujaW {
@@ -231,18 +226,14 @@ body {
   border-radius: 0;
 }
 
-/* .draggable-2E_4tJ {
+.draggable-2E_4tJ {
   position: relative;
   height: 30px;
-} */
+}
 
 /* Guild Separator */
 
 .guildSeparator-33mFX6 {
-  display: none;
-}
-
-#bd-pub-li {
   display: none;
 }
 
@@ -545,15 +536,24 @@ nav.container-3w7J-x,
   background: transparent;
 }
 
-.buttonContainer-DHceWr .wrapper-2aW0bm {
-  background-color: var(--color-darkgunmental);
-  padding: 6px 8px;
-  height: 45px;
+/* Welcome messages */
+
+.card-3RzMcx {
+  background: transparent;
+}
+
+.divider-3_HH5L .content-1o0f9g {
+  background: var(--color-darkgunmental);
+  padding: 4px 8px;
 }
 
 /****************************************************************
 * ===  6. Members List  ===
 **************************************************************/
+
+.container-2wlB3z {
+  background: var(--color-ebonyclay);
+}
 
 .members-1998pB,
 .members-1998pB > div {
