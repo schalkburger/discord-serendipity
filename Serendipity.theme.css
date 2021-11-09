@@ -47,22 +47,11 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-.container-2lgZY8 {
-  background: var(--color-ebonyclay);
-}
-
 /* Title Bar */
 
 .titleBar-AC4pGV {
   background: var(--color-ebonyclay);
 }
-
-/* BetterDiscord Notifications */
-
-/* .platform-osx .noticeWrapper-8z511t ~ * .wrapper-3NnKdC {
-  padding-top: 0;
-  margin-top: 0;
-} */
 
 /* Scrollbar */
 
@@ -159,7 +148,7 @@ body {
 }
 
 #app-mount .guilds-1SWlCJ [class*="listItem"]:not([class*="listItemWrapper"]) {
-  margin: 12px 0;
+  margin: 12px 0px;
   background: transparent;
 }
 
@@ -434,6 +423,21 @@ nav.container-3w7J-x,
   padding: 8px;
 }
 
+.wrapper-24pKcD .container-1giJp5 {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 200ms ease-in-out;
+  height: 0;
+  padding: 0 8px;
+}
+
+.panels-j1Uci_:hover .wrapper-24pKcD .container-1giJp5 {
+  opacity: 1;
+  visibility: visible;
+  height: 85px;
+  padding: 8px;
+}
+
 /* Video & Screen Buttons */
 
 .actionButtons-14eAc_ {
@@ -684,4 +688,25 @@ h2.membersGroup-v9BXpm.container-2ax-kl {
 .recentMentionsPopout-3rCiI6.messagesPopoutWrap-1MQ1bW
   .messageContainer-gbhlwo {
   background: var(--color-ebonyclay);
+}
+
+/* Audit Log */
+
+.contentRegion-3nDuYy {
+  background: var(--color-darkgunmental);
+}
+
+.theme-dark .headerClickable-g5d9lT,
+.theme-dark .headerDefault-2D4Kcg {
+  background: var(--color-ebonyclay);
+}
+
+/* Popout Menus */
+
+.menu-3sdvDG {
+  background: var(--color-darkgunmental);
+}
+
+.menu-3sdvDG .scroller-3BxosC::-webkit-scrollbar {
+  width: 0px !important;
 }
