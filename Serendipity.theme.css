@@ -171,6 +171,8 @@ body {
 
 /* Search */
 
+.searchBar-3dMhj,
+.bd-search-wrapper,
 .searchBar-3dMhjb {
   background: var(--color-darkgunmental);
 }
@@ -185,6 +187,11 @@ body {
 .folder-1hbNCn,
 .circleIconButton-1QV--U {
   background: var(--color-darkgunmental) !important;
+}
+
+.bd-minimal .guilds-1SWlCJ .wrapper-3Njo_c > span {
+  left: 12px;
+  width: 45px;
 }
 
 /* Expanded Folder */
@@ -215,14 +222,18 @@ body {
   border-radius: 0;
 }
 
-.draggable-2E_4tJ {
+/* .draggable-2E_4tJ {
   position: relative;
   height: 30px;
-}
+} */
 
 /* Guild Separator */
 
 .guildSeparator-33mFX6 {
+  display: none;
+}
+
+#bd-pub-li {
   display: none;
 }
 
@@ -380,6 +391,7 @@ nav.container-3w7J-x,
   box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.2);
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-top: 0;
 }
 
 .gameIconWrapper-1YByCI {
@@ -419,23 +431,36 @@ nav.container-3w7J-x,
 .panels-j1Uci_:hover .activityPanel-28dQGo {
   opacity: 1;
   visibility: visible;
-  height: 22px;
-  padding: 8px;
+  height: 30px;
+  padding: 0 8px;
 }
 
+.panels-j1Uci_ .activityPanel-28dQGo .body-GmmuPm {
+  position: relative;
+  bottom: -6px;
+}
+
+/* Voice Connected Panel */
+
 .wrapper-24pKcD .container-1giJp5 {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: all 200ms ease-in-out;
-  height: 0;
-  padding: 0 8px;
+  height: auto;
+  padding: 0 8px 4px 8px;
 }
 
 .panels-j1Uci_:hover .wrapper-24pKcD .container-1giJp5 {
   opacity: 1;
   visibility: visible;
-  height: 85px;
-  padding: 8px;
+  height: auto;
+  padding: 0 8px 4px 8px;
+}
+
+/* Voice Connected Text */
+
+.button-38aScr {
+  font-size: 12px;
 }
 
 /* Video & Screen Buttons */
@@ -455,8 +480,8 @@ nav.container-3w7J-x,
 .panels-j1Uci_:hover .actionButtons-14eAc_ {
   opacity: 1;
   visibility: visible;
-  height: 22px;
-  padding: 8px;
+  height: 24px;
+  padding: 0 8px;
 }
 
 .button-14-BFJ,
@@ -540,27 +565,27 @@ nav.container-3w7J-x,
   background: transparent;
 }
 
+.buttonContainer-DHceWr .wrapper-2aW0bm {
+  background-color: var(--color-darkgunmental);
+  padding: 6px 8px;
+  height: 45px;
+}
+
 /* Welcome messages */
 
 .card-3RzMcx {
-  background: transparent;
-}
-
-.divider-3_HH5L .content-1o0f9g {
-  background: var(--color-darkgunmental);
-  padding: 4px 8px;
+  background-color: var(--color-darkgunmental);
 }
 
 /****************************************************************
 * ===  6. Members List  ===
 **************************************************************/
 
-.container-2wlB3z {
-  background: var(--color-ebonyclay);
-}
+/* Background Colours */
 
 .members-1998pB,
-.members-1998pB > div {
+.members-1998pB > div,
+.container-2wlB3z {
   background: var(--color-ebonyclay);
 }
 
@@ -709,4 +734,14 @@ h2.membersGroup-v9BXpm.container-2ax-kl {
 
 .menu-3sdvDG .scroller-3BxosC::-webkit-scrollbar {
   width: 0px !important;
+}
+
+/****************************************************************
+* ===  9. Plugins  ===
+**************************************************************/
+
+/* BetterFormattingRedux */
+
+#bfredux.bf-toolbar::before {
+  background: var(--color-darkgunmental);
 }
