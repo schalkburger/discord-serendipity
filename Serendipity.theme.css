@@ -736,6 +736,13 @@ h2.membersGroup-v9BXpm.container-2ax-kl {
   width: 0px !important;
 }
 
+/* Roles */
+
+.titleContainer-2CXtJo,
+.header-2mZ9Ov {
+  background: var(--color-ebonyclay);
+}
+
 /****************************************************************
 * ===  9. Plugins  ===
 **************************************************************/
