@@ -1,7 +1,7 @@
 /**
  * @name Serendipity
  * @author Darkharden
- * @version 2.0.0
+ * @version 1.1.0
  * @description Discord theme based on Serendipity for VSCode
  * @source https://github.com/schalkburger/discord-serendipity
 */
@@ -47,6 +47,14 @@
   --interactive-active: #dee0ef;
   --ping: #ee8679;
   --brand-experiment: #5ba2d0;
+}
+
+/****************************************************************
+* ===  Channel List ===
+**************************************************************/
+
+div[class*="sidebar"] {
+  width: 200px;
 }
 
 /****************************************************************
