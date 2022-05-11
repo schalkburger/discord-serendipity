@@ -16,6 +16,8 @@
 * ===  6. Members List  ===
 * ===  7. Direct Messages  ===
 * ===  8. Settings  ===
+* ===  9. Plugins  ===
+* ===  10. Major  ===
 
 **************************************************************/
 
@@ -751,4 +753,12 @@ h2.membersGroup-v9BXpm.container-2ax-kl {
 
 #bfredux.bf-toolbar::before {
   background: var(--color-darkgunmental);
+}
+
+/****************************************************************
+* ===  10. Major  ===
+**************************************************************/
+
+.content-2a4AW9 {
+  background: var(--color-raisinblack);
 }

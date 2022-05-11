@@ -1,0 +1,62 @@
+/**
+ * @name Serendipity
+ * @author Darkharden
+ * @version 2.0.0
+ * @description Discord theme based on Serendipity for VSCode
+ * @source https://github.com/schalkburger/discord-serendipity
+*/
+
+/****************************************************************
+
+* ===  1. Global ===
+* ===  2. Server List  ===
+* ===  3. Left Sidebar ===
+* ===  4. User Area  ===
+* ===  5. Main Chat ===
+* ===  6. Members List  ===
+* ===  7. Direct Messages  ===
+* ===  8. Settings  ===
+* ===  9. Plugins  ===
+* ===  10. Major  ===
+
+**************************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,500&display=swap");
+
+/****************************************************************
+* ===  Global ===
+**************************************************************/
+
+.theme-dark {
+  --background-primary: #151726;
+  --background-secondary: #1c1e2d;
+  --background-secondary-alt: #232534;
+  --channeltextarea-background: #232534;
+  --background-tertiary: #232534;
+  --background-accent: #f8d2c9;
+  --text-normal: #dee0ef;
+  --text-spotify: #9ccfd8;
+  --text-muted: #6b6d7c;
+  --text-link: #5ba2d0;
+  --background-floating: #1c1e2d;
+  --header-primary: #dee0ef;
+  --header-secondary: #9ccfd8;
+  --header-spotify: #9ccfd8;
+  --interactive-normal: #dee0ef;
+  --interactive-hover: #94b8ff;
+  --interactive-active: #dee0ef;
+  --ping: #ee8679;
+  --brand-experiment: #5ba2d0;
+}
+
+/****************************************************************
+* ===  Members List ===
+**************************************************************/
+
+aside[class*="membersWrap"] {
+  min-width: 175px;
+}
+
+div[class*="members"] {
+  width: 175px;
+}
