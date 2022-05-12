@@ -50,6 +50,106 @@
 }
 
 /****************************************************************
+* ===  Servers sidebar ===
+**************************************************************/
+
+/* Server sidebar width */
+
+nav[class*="guilds"] {
+  width: 56px;
+}
+
+nav[class*="guilds"] div[class*="listItem"][class*="frame"] {
+  width: 56px;
+}
+
+/* Buttons e.g. Public & Read All */
+
+nav[class*="guilds"] div[class*="tutorialContainer"] #bd-pub-button {
+  border-radius: 0;
+  line-height: 1;
+  width: 90%;
+}
+
+nav[class*="guilds"]
+  div[class*="listItem"][class*="frame"]
+  div[class*="wrapper"][class*="innerFrame"] {
+  width: inherit;
+  height: inherit;
+}
+
+nav[class*="guilds"]
+  div[class*="listItem"][class*="frame"]
+  div[class*="wrapper"][class*="innerFrame"]
+  div[class*="childWrapper"][class*="button"] {
+  border-radius: 0;
+  line-height: 1;
+}
+
+/* Server icon sizes */
+
+nav[class*="guilds"]
+  div[class*="listItem"]
+  div[class*="wrapper"]
+  svg
+  > foreignObject
+  > div {
+  width: inherit;
+  height: inherit;
+}
+
+nav[class*="guilds"] div[class*="listItem"] div[class*="wrapper"],
+nav[class*="guilds"] div[class*="listItem"] div[class*="wrapper"] svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Muted servers */
+
+nav[class*="guilds"] div[class*="listItem"][class*="bd-guild"] {
+  filter: grayscale(1) opacity(0.5);
+}
+
+/* Selected server */
+
+nav[class*="guilds"]
+  div[class*="listItem"][class*="bd-guild"][class*="bd-selected"] {
+  background-color: var(--background-floating);
+  filter: grayscale(0) opacity(1);
+}
+
+nav[class*="guilds"]
+  div[class*="listItem"][class*="bd-guild"][class*="bd-selected"]
+  span {
+  background-color: var(--brand-experiment);
+}
+
+/* Folders */
+
+nav[class*="guilds"]
+  div[class*="wrapper"]
+  span[class*="expandedFolderBackground"]
+  + div[class*="listItem"] {
+  filter: grayscale(1) opacity(0.5);
+}
+
+/* Create and Discover buttons */
+
+nav[class*="guilds"]
+  div[class*="tutorialContainer"]
+  div[class*="circleIconButton"]
+  svg {
+  filter: grayscale(1) opacity(0.5);
+}
+
+nav[class*="guilds"]
+  div[class*="tutorialContainer"]
+  + div[class*="listItem"]
+  svg {
+  filter: grayscale(1) opacity(0.5);
+}
+
+/****************************************************************
 * ===  Channel List ===
 **************************************************************/
 
