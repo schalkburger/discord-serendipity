@@ -47,6 +47,7 @@
   --interactive-active: #dee0ef;
   --ping: #ee8679;
   --brand-experiment: #5ba2d0;
+  --brand-green: #5bd088;
 }
 
 /****************************************************************
@@ -108,6 +109,7 @@ nav[class*="guilds"] div[class*="listItem"] div[class*="wrapper"] svg {
 
 nav[class*="guilds"] div[class*="listItem"][class*="bd-guild"] {
   filter: grayscale(1) opacity(0.5);
+  padding: 8px 0 10px 0;
 }
 
 /* Selected server */
@@ -118,20 +120,38 @@ nav[class*="guilds"]
   filter: grayscale(0) opacity(1);
 }
 
+/* nav[class*="guilds"]
+  div[class*="listItem"][class*="bd-guild"][class*="bd-selected"][class*="bd-muted"] {
+    background-color: transparent;
+  margin: 0 0 12px;
+  padding: 8px 0 4px 0;
+} */
+
 nav[class*="guilds"]
   div[class*="listItem"][class*="bd-guild"][class*="bd-selected"]
   span {
-  background-color: var(--brand-experiment);
-  margin: 0 0 12px;
+  background-color: transparent;
+  margin: 0 0 8px;
   padding: 8px 0 4px 0;
+  width: 4px;
 }
 
 nav[class*="guilds"]
   div[class*="listItem"][class*="bd-guild"][class*="bd-audio"] {
   background-color: var(--background-floating);
   filter: grayscale(0) opacity(1);
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   padding: 8px 0 4px 0;
+  border-left: 4px solid var(--brand-green);
+}
+
+nav[class*="guilds"]
+  div[class*="listItem"][class*="bd-guild"][class*="bd-audio"]
+  span {
+  background-color: transparent;
+  margin: 0 0 8px;
+  padding: 8px 0 4px 0;
+  width: 4px;
 }
 
 nav[class*="guilds"]
