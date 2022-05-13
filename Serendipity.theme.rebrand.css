@@ -124,6 +124,13 @@ nav[class*="guilds"]
   background-color: var(--brand-experiment);
 }
 
+nav[class*="guilds"]
+  div[class*="listItem"][class*="bd-guild"][class*="bd-audio"]
+  span {
+  background-color: var(--brand-experiment);
+  filter: grayscale(0) opacity(1);
+}
+
 /* Folders */
 
 nav[class*="guilds"]
