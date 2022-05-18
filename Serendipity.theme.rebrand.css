@@ -108,24 +108,30 @@ nav[class*="guilds"] div[class*="listItem"] div[class*="wrapper"] svg {
 /* Muted servers */
 
 nav[class*="guilds"] div[class*="listItem"][class*="bd-guild"] {
-  filter: grayscale(1) opacity(0.5);
-  padding: 8px 0 10px 0;
+  filter: grayscale(1) opacity(0.3) brightness(0.9);
+  padding: 12px 0 10px 0;
+  border-left: 4px solid var(--background-floating);
 }
 
 /* Selected server */
 
 nav[class*="guilds"]
   div[class*="listItem"][class*="bd-guild"][class*="bd-selected"] {
-  background-color: var(--background-floating);
-  filter: grayscale(0) opacity(1);
+  background-color: transparent;
+  filter: grayscale(1) saturate(0);
+  border-left: 4px solid var(--text-muted);
 }
 
-/* nav[class*="guilds"]
-  div[class*="listItem"][class*="bd-guild"][class*="bd-selected"][class*="bd-muted"] {
-    background-color: transparent;
-  margin: 0 0 12px;
-  padding: 8px 0 4px 0;
-} */
+/* Selected and Joined server */
+
+nav[class*="guilds"]
+  div[class*="listItem"][class*="bd-guild"][class*="bd-audio"] {
+  background-color: var(--background-floating);
+  filter: grayscale(0) opacity(1);
+  margin: 0 0 8px;
+  padding: 12px 0 10px 0;
+  border-left: 4px solid var(--brand-green);
+}
 
 nav[class*="guilds"]
   div[class*="listItem"][class*="bd-guild"][class*="bd-selected"]
@@ -134,15 +140,6 @@ nav[class*="guilds"]
   margin: 0 0 8px;
   padding: 8px 0 4px 0;
   width: 4px;
-}
-
-nav[class*="guilds"]
-  div[class*="listItem"][class*="bd-guild"][class*="bd-audio"] {
-  background-color: var(--background-floating);
-  filter: grayscale(0) opacity(1);
-  margin: 0 0 8px;
-  padding: 8px 0 4px 0;
-  border-left: 4px solid var(--brand-green);
 }
 
 nav[class*="guilds"]
@@ -198,11 +195,11 @@ div[class*="sidebar"] {
 **************************************************************/
 
 aside[class*="membersWrap"] {
-  min-width: 240px;
+  min-width: 220px;
 }
 
 div[class*="members"] {
-  width: 240px;
+  width: 220px;
 }
 
 /****************************************************************
@@ -221,4 +218,35 @@ div[class*="content"]
   div[class*="selected"] {
   background-color: var(--channeltextarea-background);
   border-radius: 0;
+}
+
+/****************************************************************
+* ===  Main Chat ===
+**************************************************************/
+
+/* Main Chat Scrollbar */
+
+div[class*="auto"]::-webkit-scrollbar {
+  width: 22px;
+  height: 20px;
+}
+
+div[class*="auto"]::-webkit-scrollbar-thumb {
+  background-color: var(--text-muted);
+  min-height: 40px;
+}
+
+div[class*="auto"]::-webkit-scrollbar-track {
+  background-color: var(--background-floating);
+  border-radius: 0;
+}
+
+/* Mentioned Message */
+
+li[class*="messageListItem"] div[class*="mentioned"] {
+  background-color: #222540;
+}
+
+li[class*="messageListItem"] div[class*="mentioned"]:before {
+  background-color: #dee0ef;
 }
